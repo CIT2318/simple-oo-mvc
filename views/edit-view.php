@@ -9,7 +9,7 @@
 	<li><a href="index.php?action=list">Read</a></li>
 	<li><a href="index.php?action=create">Create</a></li>
 	<li><a href="index.php?action=edit">Update</a></li>
-	<li><a href="index.php?action=delete">Delete</a></li>
+	<li><a href="index.php?action=delete-list">Delete</a></li>
 </ul>
 <h1>Edit film details</h1>
 <form action="index.php?action=update.php" method="post">

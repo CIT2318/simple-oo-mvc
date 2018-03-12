@@ -10,12 +10,12 @@
 	<li><a href="index.php?action=list">Read</a></li>
 	<li><a href="index.php?action=create">Create</a></li>
 	<li><a href="index.php?action=edit">Update</a></li>
-	<li><a href="index.php?action=delete">Delete</a></li>
+	<li><a href="index.php?action=delete-list">Delete</a></li>
 </ul>
 </nav>
 
 <h1>Add a new film</h1>
-<form action="index.php?action=create" method="post">
+<form action="index.php?action=save" method="post">
 <label for="title">Title:</label>
 <input type="text" id="title" name="title">
 <label for="year">Year:</label>
