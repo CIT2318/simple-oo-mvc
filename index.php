@@ -17,14 +17,6 @@ if ($action==="list") {
     $filmController->list();
 } else if ($action==="details" && isset($_GET['id'])) {
     $filmController->details($_GET['id']);
-} else if ($action==="create" ) {
-    $filmController->create();
-} else if ($action==="save") {
-    $filmController->save();
-} else if ($action==="delete-list") {
-    $filmController->deleteList();
-} else if ($action==="delete" && isset($_GET['id'])) {
-    $filmController->delete($_GET['id']);
 } else {
     require("views/404-view.php");
 }
