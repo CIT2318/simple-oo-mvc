@@ -1,11 +1,9 @@
 <?php
-use SimpleFilmApp\DbConnect;
-use SimpleFilmApp\models\FilmModel;
-use SimpleFilmApp\controllers\FilmController;
+use controllers\FilmController;
 
-require_once("SimpleFilmApp/dbconnect.php");
-require_once("SimpleFilmApp/models/filmmodel.php");
-require_once("SimpleFilmApp/controllers/filmcontroller.php");
+require_once("database/dbconnect.php");
+require_once("models/filmmodel.php");
+require_once("controllers/filmcontroller.php");
 
 $filmController =  new FilmController();
 
@@ -16,8 +14,13 @@ if(isset($_GET["action"])){
 }
 
 if ($action==="list") {
-    $filmController->listFilms();
+    $filmController->list();
+} else if ($action==="details" && isset($_GET['id'])) {
+    $filmController->details($_GET['id']);
 } else {
-    include("views/404-view.php");
+    require("views/404-view.php");
 }
+
+
+
 ?>

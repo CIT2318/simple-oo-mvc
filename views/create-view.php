@@ -14,17 +14,17 @@
 </ul>
 </nav>
 
-<?php
+<h1>Add a new film</h1>
+<form action="index.php?action=create" method="post">
+<label for="title">Title:</label>
+<input type="text" id="title" name="title">
+<label for="year">Year:</label>
+<input type="text" id="year" name="year">
 
+<label for="duration">Duration:</label>
+<input type="text" id="duration" name="duration">
+<input type="submit" name="submitBtn" value="Add Film">
+</form>
 
-if($film){
-	echo "<h1>".$film['title']."</h1>";
-	echo "<ul>";
-	echo "<li>Year: ".$film['year']."</li>";
-	echo "<li>Duration: ".$film['duration']."</li>";
-	echo "</ul>";
-}
-
-?>
 </body>
 </html>

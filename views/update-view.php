@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Delete the film</title>
+<title>Update film record</title>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 </head>
 <body>

@@ -1,6 +1,7 @@
 <?php
-namespace SimpleFilmApp;
+namespace database;
 use \PDO;
+
 class DbConnect{
     private static $conn;
     public static function getConnection()
