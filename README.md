@@ -1,6 +1,6 @@
 # A Simple MVC Application
 
-This practical looks at making a simple object oriented MVC application. It is based on the 'MVC using functions' example we have looked at previously. Make sure you have completed the previous weeks practical work before attempting this. 
+This practical looks at making a simple object oriented MVC application. It is based on the 'MVC using functions' example we have looked at previously. 
 
 First, find the file *DbConnect.php* and make changes to the connection settings so that it matches your database. Put all the files on a web server and check that you can view films. The other actions - add film, delete etc. won't work yet.
 
